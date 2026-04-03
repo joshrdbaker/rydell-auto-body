@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2026 Josh Baker (https://codepen.io/joshrdbaker/pen/wvVoJwe)
+Copyright (c) 2026 Josh Baker
 Fork of an original work that is now private.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
