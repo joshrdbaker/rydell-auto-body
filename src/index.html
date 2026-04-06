@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rydell Body Shop Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 <!-- =========================
   HERO
 ========================= -->
@@ -11,8 +22,8 @@
           Rydell Auto Body Shop is fully certified and the preferred body shop of insurance companies everywhere.
           We hope you never need us, but when you do we're here to help.
         </p>
-        <a href="https://www.sample.com" class="btn btn-outline-white">
-          <b>Schedule an appointment today.</b>
+        <a href="https://www.sample.com" class="btn btn-outline-white hero-cta-btn">
+          <b>SCHEDULE AN APPOINTMENT TODAY</b>
         </a>
       </div>
     </div>
@@ -22,7 +33,7 @@
 <!-- =========================
   CERTIFICATIONS
 ========================= -->
-<div class="container section-margin">
+<div class="container section-margin cert-band">
   <div class="row">
     <div class="col-xs-12 text-center cert-title">
       <h2><b>Fully certified</b> for your peace-of-mind.</h2>
@@ -75,21 +86,21 @@
 <!-- =========================
   FOR WHEN LIFE HAPPENS (VIDEO STRIP)
 ========================= -->
-<div class="container-fluid section-color for-when-strip">
-  <div class="container">
-    <div class="row section-padding">
+<div class="container-fluid for-when-strip">
+  <div class="container-fluid for-when-strip__wrap">
+    <div class="row for-when-strip__grid-row">
 
-      <div class="col-md-5 banner-text for-when-copy">
-        <h2>For when life happens.</h2>
+      <div class="col-xs-12 banner-text for-when-copy">
+        <h2 class="for-when-strip__title">For when life happens.</h2>
         <p class="lead">
           We hope you never need us. But when you do, our state-of-the-art facilities and fully certified professionals are here to help.
         </p>
-        <a href="https://www.sample.com" class="btn btn-outline-white-1">
-          <b>Schedule an appointment today.</b>
+        <a href="https://www.sample.com" class="btn btn-for-when-cta">
+          <b>SCHEDULE AN APPOINTMENT TODAY</b>
         </a>
       </div>
 
-      <div class="col-md-7">
+      <div class="col-xs-12 for-when-strip__media">
         <div class="embed-responsive embed-responsive-16by9 video-frame">
           <iframe
             class="embed-responsive-item"
@@ -107,17 +118,21 @@
 </div>
 
 <!-- =========================
-  TESTIMONIALS — infinite marquee (between video strip and Why choose; same technique as certification logos)
+  TESTIMONIALS — carousel (between video strip and Why choose)
 ========================= -->
 <section class="testimonials-marquee-band section-margin" aria-labelledby="testimonials-marquee-heading">
-  <div class="container">
-    <h2 id="testimonials-marquee-heading" class="testimonials-marquee-band__title text-center">What our customers say</h2>
-    <p class="sr-only">Automatically scrolling customer reviews. Pause animations in your system settings if you prefer reduced motion.</p>
+  <div class="container testimonials-marquee-band__heading-wrap">
+    <h2 id="testimonials-marquee-heading" class="site-section-eyebrow text-center">What our guests say</h2>
+    <p class="sr-only">Use the previous and next buttons to read guest reviews.</p>
   </div>
-  <div class="testimonial-marquee__viewport">
-    <div class="testimonial-marquee__track">
-      <div class="testimonial-marquee__group">
-        <article class="testimonial-card testimonial-card--marquee">
+  <div class="testimonial-carousel" data-testimonial-carousel>
+    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--prev" aria-label="Previous review">
+      <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <div class="testimonial-carousel__viewport">
+      <div class="testimonial-carousel__slides">
+        <div class="testimonial-carousel__slide is-active" role="group" aria-roledescription="slide" aria-label="Review 1 of 3">
+        <article class="testimonial-card testimonial-card--carousel">
           <header class="testimonial-card__header">
             <div class="testimonial-card__left">
               <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
@@ -136,7 +151,9 @@
           <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
           <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
         </article>
-        <article class="testimonial-card testimonial-card--marquee">
+        </div>
+        <div class="testimonial-carousel__slide" role="group" aria-roledescription="slide" aria-label="Review 2 of 3" aria-hidden="true">
+        <article class="testimonial-card testimonial-card--carousel">
           <header class="testimonial-card__header">
             <div class="testimonial-card__left">
               <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
@@ -155,7 +172,9 @@
           <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
           <footer class="testimonial-card__footer">MENTOR, MN</footer>
         </article>
-        <article class="testimonial-card testimonial-card--marquee">
+        </div>
+        <div class="testimonial-carousel__slide" role="group" aria-roledescription="slide" aria-label="Review 3 of 3" aria-hidden="true">
+        <article class="testimonial-card testimonial-card--carousel">
           <header class="testimonial-card__header">
             <div class="testimonial-card__left">
               <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
@@ -174,191 +193,23 @@
           <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
           <footer class="testimonial-card__footer">THOMPSON, ND</footer>
         </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
-          <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Sales Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
-          <footer class="testimonial-card__footer">MENTOR, MN</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>David L</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-05-12">5/12/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
-          <footer class="testimonial-card__footer">THOMPSON, ND</footer>
-        </article>
-      </div>
-      <div class="testimonial-marquee__group" aria-hidden="true">
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
-          <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Sales Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
-          <footer class="testimonial-card__footer">MENTOR, MN</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>David L</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-05-12">5/12/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
-          <footer class="testimonial-card__footer">THOMPSON, ND</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
-          <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Sales Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
-          <footer class="testimonial-card__footer">MENTOR, MN</footer>
-        </article>
-        <article class="testimonial-card testimonial-card--marquee">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>David L</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-05-12">5/12/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
-          <footer class="testimonial-card__footer">THOMPSON, ND</footer>
-        </article>
+        </div>
       </div>
     </div>
+    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--next" aria-label="Next review">
+      <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+    </button>
   </div>
 </section>
+
 
 <!-- =========================
   WHY CHOOSE (IMAGE LEFT, COPY RIGHT, GRADIENT OVERLAY)
 ========================= -->
 <section class="why-rydell section-padding" aria-labelledby="why-rydell-heading">
-  <div class="container why-rydell__wrap">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-6 why-rydell__copy banner-text">
+  <div class="container-fluid why-rydell__wrap">
+    <div class="row why-rydell__grid-row">
+      <div class="col-xs-12 why-rydell__copy banner-text">
         <h2 id="why-rydell-heading">Why choose Rydell Auto Body of Grand Forks?</h2>
         <p class="lead">Looking for peace-of-mind? You've come to the right place.</p>
 
@@ -377,7 +228,7 @@
           <div class="why-rydell__body"><h3>We are a Preferred Body Shop for Insurance Companies in Grand Forks.</h3></div>
         </div>
 
-        <a href="https://www.sample.com" class="btn btn-outline-white btn-block why-rydell__cta">
+        <a href="https://www.sample.com" class="btn btn-block why-rydell__cta">
           <b>Schedule an appointment today.</b>
         </a>
       </div>
@@ -391,7 +242,11 @@
 <section class="spotlight-services section-margin" aria-labelledby="spotlight-services-heading">
   <div class="spotlight-services__shell">
     <div class="container">
-      <h2 class="spotlight-services__title text-center" id="spotlight-services-heading">Grand Forks&rsquo; most comprehensive auto body repair shop</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+          <h2 class="site-section-eyebrow" id="spotlight-services-heading">Grand Forks&rsquo; most comprehensive auto body repair shop</h2>
+        </div>
+      </div>
       <ul class="nav nav-tabs spotlight-services__tabs" role="tablist">
         <li role="presentation" class="active">
           <a href="#spotlight-pane-hail" id="spotlight-tab-hail" aria-controls="spotlight-pane-hail" role="tab" data-toggle="tab">Hail damage</a>
@@ -412,10 +267,12 @@
         <div class="container">
           <div class="row hail-spotlight__row">
             <div class="col-md-6 col-sm-12 hail-spotlight__media">
-              <img
-                src="https://www.rydellcars.com/static/dealer-5664/966938.jpg"
-                alt="Hail damaged vehicle roof"
-                class="img-responsive hail-spotlight__img">
+              <div class="spotlight-services__media-frame">
+                <img
+                  src="./images/hail%20damage.webp"
+                  alt="Hail damaged vehicle roof"
+                  class="hail-spotlight__img">
+              </div>
             </div>
             <div class="col-md-6 col-sm-12 hail-spotlight__copy">
               <h2 id="hail-spotlight-heading">Hail damage repair in Grand Forks</h2>
@@ -430,14 +287,17 @@
         <div class="container">
           <div class="row pdr-spotlight__row">
             <div class="col-md-6 col-sm-12 pdr-spotlight__media">
-              <img
-                src="https://www.rydellcars.com/static/dealer-5664/421095.jpg"
-                alt="Paintless dent removal"
-                class="img-responsive pdr-spotlight__img">
+              <div class="spotlight-services__media-frame">
+                <img
+                  src="./images/PDR.jpeg"
+                  alt="Paintless dent removal"
+                  class="pdr-spotlight__img">
+              </div>
             </div>
             <div class="col-md-6 col-sm-12 pdr-spotlight__copy">
-              <h2 id="pdr-spotlight-heading">Paintless dent repair (PDR) in Grand Forks</h2>
-              <p class="lead pdr-spotlight__lead">Whether it&rsquo;s pesky hail damage or just a small door ding, our experienced Paintless Dent Repair (PDR) technician can get most of them out. Our technician will access the damage from behind the panel using a series of rods and techniques to essentially &ldquo;massage&rdquo; out the dent and dependent on the extent of the damage this could save hundreds to thousands of dollars in unneeded repairs. When you work with Rydell Auto Body and Glass we will make sure we give you the best option and most PDR services can be done within a day and can be scheduled at your convenience.</p>
+              <h2 id="pdr-spotlight-heading">Paintless dent repair (PDR)<br> in&nbsp;Grand&nbsp;Forks</h2>
+              <p class="lead pdr-spotlight__lead">Whether it&rsquo;s pesky hail damage or just a small door ding, our experienced Paintless Dent Repair (PDR) technician can get most of them out.</p>
+              <p>Our technician will access the damage from behind the panel using a series of rods and techniques to essentially &ldquo;massage&rdquo; out the dent and dependent on the extent of the damage this could save hundreds to thousands of dollars in unneeded repairs. When you work with Rydell Auto Body and Glass we will make sure we give you the best option and most PDR services can be done within a day and can be scheduled at your convenience.</p>
               <p><a href="./paintless-dent-removal.html" class="btn btn-outline-red pdr-spotlight__btn"><b>Paintless dent removal details</b></a></p>
             </div>
           </div>
@@ -447,14 +307,17 @@
         <div class="container">
           <div class="row glass-spotlight__row">
             <div class="col-md-6 col-sm-12 glass-spotlight__media">
-              <img
-                src="https://www.rydellcars.com/static/dealer-5664/848646.jpg"
-                alt="Auto glass repair and windshield service"
-                class="img-responsive glass-spotlight__img">
+              <div class="spotlight-services__media-frame">
+                <img
+                  src="./images/Windshield%20Repair.jpeg"
+                  alt="Auto glass repair and windshield service"
+                  class="glass-spotlight__img">
+              </div>
             </div>
             <div class="col-md-6 col-sm-12 glass-spotlight__copy">
-              <h2 id="glass-spotlight-heading">Windshield &amp; auto glass in Grand Forks</h2>
-              <p class="lead glass-spotlight__lead">At Rydell Auto Body and Glass we have an in-house glass technician which allows us to perform all of our windshield replacements and repairs right in our facility. Our glass technician is fully certified to make sure you are not only getting a quality repair but it will be safe for you and your passengers. Once we have either repaired or replaced your windshield we will give you our complimentary vehicle detail and as always we will work with your insurance company on your behalf or we will make sure you get the best price so make sure you give us a call as most windshields can be replaced within a day!</p>
+              <h2 id="glass-spotlight-heading">Windshield &amp; auto glass<br> in&nbsp;Grand&nbsp;Forks</h2>
+              <p class="lead glass-spotlight__lead">We have an in-house glass technician which allows us to perform all of our windshield replacements and repairs right in our facility.</p>
+              <p>Our glass technician is fully certified to make sure you are not only getting a quality repair but it will be safe for you and your passengers. Once we have either repaired or replaced your windshield we will give you our complimentary vehicle detail and as always we will work with your insurance company on your behalf or we will make sure you get the best price so make sure you give us a call as most windshields can be replaced within a day!</p>
               <p><a href="./auto-glass.html" class="btn btn-outline-red glass-spotlight__btn"><b>Auto glass details</b></a></p>
             </div>
           </div>
@@ -464,13 +327,15 @@
         <div class="container">
           <div class="row recal-spotlight__row">
             <div class="col-md-6 col-sm-12 recal-spotlight__media">
-              <img
-                src="https://www.rydellcars.com/static/dealer-5664/425547.jpg"
-                alt="Windshield and advanced driver assistance systems"
-                class="img-responsive recal-spotlight__img">
+              <div class="spotlight-services__media-frame">
+                <img
+                  src="./images/Recal.jpeg"
+                  alt="Windshield and advanced driver assistance systems"
+                  class="recal-spotlight__img">
+              </div>
             </div>
             <div class="col-md-6 col-sm-12 recal-spotlight__copy">
-              <h2 id="recal-spotlight-heading">ADAS &amp; vehicle recalibration in Grand Forks</h2>
+              <h2 id="recal-spotlight-heading">ADAS &amp; vehicle recalibration<br> in&nbsp;Grand&nbsp;Forks</h2>
               <p class="lead recal-spotlight__lead">Factory-accurate calibration after collision repair or glass work&mdash;done in-house, not outsourced.</p>
               <p>Modern safety systems rely on cameras and sensors that must stay aligned after a windshield replacement or structural repair. Our in-house recalibration center restores your ADAS features to factory standards so lane assist, emergency braking, and blind spot monitoring work as designed.</p>
               <p><a href="./vehicle-recalibration.html" class="btn btn-outline-red recal-spotlight__btn"><b>Vehicle recalibration details</b></a></p>
@@ -492,10 +357,9 @@
         <div class="col-md-10 col-md-offset-1">
 
       <div class="text-center">
-        <h1 id="repair-process-heading">OUR REPAIR PROCESS</h1>
+        <h2 id="repair-process-heading" class="site-section-eyebrow">OUR REPAIR PROCESS</h2>
         <h4 class="process-subhead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          From your first call through estimate, body and paint work, reassembly, and a complimentary detail, we follow a clear path so you always know what happens next. Each step is built around OEM procedures, open communication, and getting you safely back on the road in Grand Forks.
         </h4>
       </div>
 
@@ -504,7 +368,7 @@
         <div class="col-md-6 process-step">
           <div class="process-num">1</div>
           <div class="process-body">
-            <h3>Initial Contact <span class="process-icon"><i class="far fa-handshake" aria-hidden="true"></i></span></h3>
+            <h3>Initial Contact <span class="process-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></span></h3>
             <p>The first step on your way to getting your vehicle repaired is to meet with one of our highly trained Customer Service Representatives (CSR). You will be asked a few questions about the accident and the method of payment for the damages, but as always, our estimates are free. We may also discuss how the repair process will proceed if you have your vehicle repaired by Rydell Auto Body and Glass, along with rental vehicle options and any insurance questions. We want to make sure you are comfortable and fully informed prior to the start of your repairs. If you choose to repair with us we will then be able to schedule you for an appointment that works best for you.</p>
           </div>
         </div>
@@ -523,7 +387,7 @@
         <div class="col-md-6 process-step">
           <div class="process-num">3</div>
           <div class="process-body">
-            <h3>Metal Repair Process <span class="process-icon"><i class="fa-sharp fa-light fa-screwdriver-wrench" aria-hidden="true"></i></span></h3>
+            <h3>Metal Repair Process <span class="process-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span></h3>
             <p>Once your vehicle comes to our shop for repairs, we will first inspect all of the parts in comparison to your vehicle, this ensures that you will get back the same looking vehicle as it was prior to the accident. Then one of our I-CAR Gold Certified metal technicians will complete all the body work in accordance with your vehicle's OEM guidelines. As part of the repair, we will inspect for any additional damage that could have been missed during the initial estimate and make sure there is no structure damage that could lead to ill-fitting parts or damage further down the road. We will then prime the repaired area and get it ready to be painted.</p>
           </div>
         </div>
@@ -531,7 +395,7 @@
         <div class="col-md-6 process-step">
           <div class="process-num">4</div>
           <div class="process-body">
-            <h3>Paint Process <span class="process-icon"><i class="fa-regular fa-paintbrush" aria-hidden="true"></i></span></h3>
+            <h3>Paint Process <span class="process-icon"><i class="fa-solid fa-paintbrush" aria-hidden="true"></i></span></h3>
             <p>When the vehicle arrives at our in-house paint department, we will mask off any areas that we do not want to be painted. Our paint technicians will then prep all the repaired panels to ensure that the paint will have a flawless finish, free of dust or debris. When the vehicle is ready to be sprayed with our Standox Waterborne Paint we will pull it into our state-of-the-art, IR material drying paint booths where we will apply the proper amount of paint in accordance with your vehicles OEM specifications.</p>
           </div>
         </div>
@@ -542,7 +406,7 @@
         <div class="col-md-6 process-step">
           <div class="process-num">5</div>
           <div class="process-body">
-            <h3>Buff &amp; Reassembly <span class="process-icon"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></span></h3>
+            <h3>Buff &amp; Reassembly <span class="process-icon"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i></span></h3>
             <p>When your vehicle comes out of the paint booth, we will then buff the painted area to remove any "dirt nibs" that may have been in the paint. At this time, we will also inspect the paint color and texture to ensure that it matches the unpainted panels of your vehicle. Once the buffing is completed, we will move it back to the Metal Technician to begin reassembly on your vehicle. We are reaching the end of the repair process, and your vehicle is almost back to you. When reassembly is completed, the technician will inspect the repaired area to ensure proper fit and color and test drive the vehicle to guarantee that you are getting back the best quality as possible.</p>
           </div>
         </div>
@@ -550,7 +414,7 @@
         <div class="col-md-6 process-step">
           <div class="process-num">6</div>
           <div class="process-body">
-            <h3>Complimentary Detail <span class="process-icon"><i class="far fa-sparkles" aria-hidden="true"></i></span></h3>
+            <h3>Complimentary Detail <span class="process-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span></h3>
             <p>When your vehicle is fully repaired, we will perform a complete exterior wash along with an express interior wipe down. We will hand wash the complete exterior with our in-house wash bay using soft head brushes and a mild detergent, once we have washed your vehicle, we will hand dry the exterior and the door jams. We will then vacuum the carpets and seats and wipe down the interior surfaces to ensure you are completely satisfied with your repair. Now that your vehicle is repaired, we will give you a call and even start your vehicle in the winter if you want.</p>
           </div>
         </div>
@@ -565,10 +429,11 @@
 <!-- =========================
   RECENT CUSTOMER STORY (after repair process)
 ========================= -->
-<div class="container section-margin testimonial-spotlight">
+<section class="testimonial-spotlight-band section-margin hidden" aria-labelledby="recent-guest-heading" aria-hidden="true">
+  <div class="container testimonial-spotlight">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h2 class="testimonial-spotlight__title text-center">Recent guest experience</h2>
+      <h2 id="recent-guest-heading" class="site-section-eyebrow text-center testimonial-spotlight__eyebrow">Recent guest experience</h2>
       <article class="testimonial-card testimonial-card--static">
         <header class="testimonial-card__header">
           <div class="testimonial-card__left">
@@ -592,12 +457,13 @@
       </article>
     </div>
   </div>
-</div>
+  </div>
+</section>
 
 <!-- =========================
   ADDITIONAL SERVICES & BENEFITS
 ========================= -->
-<div class="container-fluid section-color section-padding banner-text additional-benefits hidden" aria-hidden="true">
+<div class="container-fluid section-color section-padding banner-text additional-benefits rule-of-thumbs hidden" aria-hidden="true">
   <div class="container">
     <div class="row">
 
@@ -635,23 +501,48 @@
 </div>
 
 <!-- =========================
-  CONTACT (same layout as Why choose: image left, gradient, copy right)
+  CONTACT (image left, solid split, copy right)
 ========================= -->
 <section class="contact-cta section-padding section-margin" aria-labelledby="contact-heading">
-  <div class="container contact-cta__wrap">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-6 col-sm-12 contact-cta__copy banner-text">
-        <h2 id="contact-heading">Contact us today to get your FREE estimate!</h2>
+  <div class="container-fluid contact-cta__wrap">
+    <div class="row contact-cta__row">
+      <div class="col-xs-12 contact-cta__copy banner-text">
+        <h2 id="contact-heading" class="contact-cta__title">Contact us today to get your FREE estimate!</h2>
         <h4 class="contact-cta__subhead">Rydell Auto Body and Glass</h4>
         <p class="contact-cta__address">1502 28th Ave. S.<br>Grand Forks, ND 58201</p>
 
         <div class="row contact-cta__btns">
-          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-outline-white btn-block"><b>Give us a call.</b></a></div>
-          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-outline-white btn-block"><b>Chat online.</b></a></div>
-          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-outline-white btn-block"><b>Text us.</b></a></div>
-          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-outline-white btn-block"><b>Email us.</b></a></div>
+          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-block contact-cta__btn"><b>GIVE US A CALL</b></a></div>
+          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-block contact-cta__btn"><b>CHAT ONLINE</b></a></div>
+          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-block contact-cta__btn"><b>TEXT US</b></a></div>
+          <div class="col-xs-6"><a href="https://www.sample.com" class="btn btn-block contact-cta__btn"><b>EMAIL US</b></a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+(function () {
+  var root = document.querySelector("[data-testimonial-carousel]");
+  if (!root) return;
+  var slides = root.querySelectorAll(".testimonial-carousel__slide");
+  var prev = root.querySelector(".testimonial-carousel__arrow--prev");
+  var next = root.querySelector(".testimonial-carousel__arrow--next");
+  var i = 0;
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function (slide, idx) {
+      var on = idx === i;
+      slide.classList.toggle("is-active", on);
+      slide.setAttribute("aria-hidden", on ? "false" : "true");
+    });
+  }
+  if (prev) prev.addEventListener("click", function () { show(i - 1); });
+  if (next) next.addEventListener("click", function () { show(i + 1); });
+  show(0);
+})();
+</script>
+</body>
+</html>

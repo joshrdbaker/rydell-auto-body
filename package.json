@@ -1,0 +1,9 @@
+{
+  "name": "rydell-body-shop-project",
+  "private": true,
+  "description": "Run npm run sync after editing src/style.css or src/*.html so dist/ matches (avoids stale overrides).",
+  "scripts": {
+    "sync": "sh scripts/sync-dist.sh",
+    "build": "sh scripts/sync-dist.sh"
+  }
+}
