@@ -118,91 +118,149 @@
 </div>
 
 <!-- =========================
-  TESTIMONIALS — carousel (between video strip and Why choose)
+  TESTIMONIALS — three per page, arrow navigation
 ========================= -->
 <section class="testimonials-marquee-band section-margin" aria-labelledby="testimonials-marquee-heading">
   <div class="container testimonials-marquee-band__heading-wrap">
     <h2 id="testimonials-marquee-heading" class="site-section-eyebrow text-center">What our guests say</h2>
-    <p class="sr-only">Use the previous and next buttons to read guest reviews.</p>
+    <p class="sr-only">Use the previous and next buttons to see more reviews.</p>
   </div>
   <div class="testimonial-carousel" data-testimonial-carousel>
-    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--prev" aria-label="Previous review">
+    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--prev" aria-label="Previous reviews">
       <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
     </button>
     <div class="testimonial-carousel__viewport">
-      <div class="testimonial-carousel__slides">
-        <div class="testimonial-carousel__slide is-active" role="group" aria-roledescription="slide" aria-label="Review 1 of 3">
-        <article class="testimonial-card testimonial-card--carousel">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
-          <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
-        </article>
+      <div class="testimonial-carousel__pages">
+        <div class="testimonial-carousel__page is-active" role="group" aria-roledescription="slide" aria-label="Reviews 1 to 3">
+          <div class="testimonial-grid">
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
+                    <p class="testimonial-card__status">Confirmed Service Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
+              <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
+            </article>
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
+                    <p class="testimonial-card__status">Confirmed Sales Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
+              <footer class="testimonial-card__footer">MENTOR, MN</footer>
+            </article>
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>Mark M</strong> <span class="testimonial-card__sep">|</span> 2022 GMC 1500 Sierra Limited</p>
+                    <p class="testimonial-card__status">Confirmed Service Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-07-10">7/10/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>The body shop made repairs to the tailgate on my 2022 GMC 1500 Sierra. Everything looked good, however the tailgate step was not aligned correctly. We took it back to the body shop and <strong>they realigned the tailgate promptly.</strong> Would recommend Rydell to others.</p></blockquote>
+              <footer class="testimonial-card__footer">EAST GRAND FORKS, MN</footer>
+            </article>
+          </div>
         </div>
-        <div class="testimonial-carousel__slide" role="group" aria-roledescription="slide" aria-label="Review 2 of 3" aria-hidden="true">
-        <article class="testimonial-card testimonial-card--carousel">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Sales Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
-          <footer class="testimonial-card__footer">MENTOR, MN</footer>
-        </article>
-        </div>
-        <div class="testimonial-carousel__slide" role="group" aria-roledescription="slide" aria-label="Review 3 of 3" aria-hidden="true">
-        <article class="testimonial-card testimonial-card--carousel">
-          <header class="testimonial-card__header">
-            <div class="testimonial-card__left">
-              <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
-              <div class="testimonial-card__who">
-                <p class="testimonial-card__name-line"><strong>David L</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
-                <p class="testimonial-card__status">Confirmed Service Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-card__right">
-              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-              </div>
-              <time class="testimonial-card__date" datetime="2025-05-12">5/12/2025</time>
-            </div>
-          </header>
-          <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
-          <footer class="testimonial-card__footer">THOMPSON, ND</footer>
-        </article>
+        <div class="testimonial-carousel__page" role="group" aria-roledescription="slide" aria-label="Reviews 4 to 6" aria-hidden="true">
+          <div class="testimonial-grid">
+            <!-- Fourth review plus first two repeated to fill three columns (same order as original marquee loop) -->
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>David L</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
+                    <p class="testimonial-card__status">Confirmed Service Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-05-12">5/12/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>The box on my pickup was not in line with the cab. I received <strong>great service at the Bodyshop</strong> from Dan, Loren and Ryan. Looks great!</p></blockquote>
+              <footer class="testimonial-card__footer">THOMPSON, ND</footer>
+            </article>
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>Kathryn R</strong> <span class="testimonial-card__sep">|</span> 2018 Chevrolet Equinox</p>
+                    <p class="testimonial-card__status">Confirmed Service Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-11-02">11/2/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>From the first call to schedule my windshield replacement, I was treated professionally. <strong>When body shop staff knew I needed an oil change, they made the arrangements.</strong> The PDQ staff were so professional and arranged for new tires. Brock was so courteous and helpful. When I picked up my vehicle, it was a busy time with Trunk or Treat but staff treated me so well and went out of their way to help. Excellent service!</p></blockquote>
+              <footer class="testimonial-card__footer">GRAND FORKS, ND</footer>
+            </article>
+            <article class="testimonial-card testimonial-card--grid">
+              <header class="testimonial-card__header">
+                <div class="testimonial-card__left">
+                  <div class="testimonial-card__avatar" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                  <div class="testimonial-card__who">
+                    <p class="testimonial-card__name-line"><strong>Brian B</strong> <span class="testimonial-card__sep">|</span> 2025 GMC Sierra 1500</p>
+                    <p class="testimonial-card__status">Confirmed Sales Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial-card__right">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+                  <time class="testimonial-card__date" datetime="2025-08-15">8/15/2025</time>
+                </div>
+              </header>
+              <blockquote class="testimonial-card__quote"><p>Craig C in sales and <strong>the Body Shop staff (from receptionist to those who prepared estimate)</strong> all helped me through the process to replace my destroyed GMC and lower my stress level. I made it home with my new Denali and look forward to setting up all my preferences in the infotainment center system! Thanks to everyone including the lady assisting Craig with the paperwork!</p></blockquote>
+              <footer class="testimonial-card__footer">MENTOR, MN</footer>
+            </article>
+          </div>
         </div>
       </div>
     </div>
-    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--next" aria-label="Next review">
+    <button type="button" class="testimonial-carousel__arrow testimonial-carousel__arrow--next" aria-label="Next reviews">
       <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
     </button>
   </div>
 </section>
-
-
 <!-- =========================
   WHY CHOOSE (IMAGE LEFT, COPY RIGHT, GRADIENT OVERLAY)
 ========================= -->
@@ -278,7 +336,7 @@
               <h2 id="hail-spotlight-heading">Hail damage repair in Grand Forks</h2>
               <p class="lead hail-spotlight__lead">Free hail damage estimates &mdash; we work with all insurance companies and walk you through every step.</p>
               <p>Hail damage is stressful enough without worrying about cost and paperwork. Our team brings your vehicle in, washes it to reveal the damage, and marks each dent so you can see exactly what the storm did. From <strong>paintless dent repair</strong> for smaller dents to full conventional repair when needed, we&rsquo;ll get you back on the road with a complimentary detail when the work is done.</p>
-              <p><a href="./hail-damage-repair.html" class="btn btn-outline-red hail-spotlight__btn"><b>Hail damage repair details</b></a></p>
+              <p><a href="https://www.rydellcars.com/hail_damage_repair.html" class="btn btn-outline-red hail-spotlight__btn" target="_blank" rel="noopener noreferrer"><b>Hail damage repair details</b></a></p>
             </div>
           </div>
         </div>
@@ -298,7 +356,7 @@
               <h2 id="pdr-spotlight-heading">Paintless dent repair (PDR)<br> in&nbsp;Grand&nbsp;Forks</h2>
               <p class="lead pdr-spotlight__lead">Whether it&rsquo;s pesky hail damage or just a small door ding, our experienced Paintless Dent Repair (PDR) technician can get most of them out.</p>
               <p>Our technician will access the damage from behind the panel using a series of rods and techniques to essentially &ldquo;massage&rdquo; out the dent and dependent on the extent of the damage this could save hundreds to thousands of dollars in unneeded repairs. When you work with Rydell Auto Body and Glass we will make sure we give you the best option and most PDR services can be done within a day and can be scheduled at your convenience.</p>
-              <p><a href="./paintless-dent-removal.html" class="btn btn-outline-red pdr-spotlight__btn"><b>Paintless dent removal details</b></a></p>
+              <p><a href="https://www.rydellcars.com/paintless-dent-removal.html" class="btn btn-outline-red pdr-spotlight__btn" target="_blank" rel="noopener noreferrer"><b>Paintless dent removal details</b></a></p>
             </div>
           </div>
         </div>
@@ -318,7 +376,7 @@
               <h2 id="glass-spotlight-heading">Windshield &amp; auto glass<br> in&nbsp;Grand&nbsp;Forks</h2>
               <p class="lead glass-spotlight__lead">We have an in-house glass technician which allows us to perform all of our windshield replacements and repairs right in our facility.</p>
               <p>Our glass technician is fully certified to make sure you are not only getting a quality repair but it will be safe for you and your passengers. Once we have either repaired or replaced your windshield we will give you our complimentary vehicle detail and as always we will work with your insurance company on your behalf or we will make sure you get the best price so make sure you give us a call as most windshields can be replaced within a day!</p>
-              <p><a href="./auto-glass.html" class="btn btn-outline-red glass-spotlight__btn"><b>Auto glass details</b></a></p>
+              <p><a href="https://www.rydellcars.com/auto-glass.html" class="btn btn-outline-red glass-spotlight__btn" target="_blank" rel="noopener noreferrer"><b>Auto glass details</b></a></p>
             </div>
           </div>
         </div>
@@ -527,16 +585,16 @@
 (function () {
   var root = document.querySelector("[data-testimonial-carousel]");
   if (!root) return;
-  var slides = root.querySelectorAll(".testimonial-carousel__slide");
-  var prev = root.querySelector(".testimonial-carousel__arrow--prev");
-  var next = root.querySelector(".testimonial-carousel__arrow--next");
+  var pages = root.querySelectorAll(".testimonial-carousel__page");
+  var prev  = root.querySelector(".testimonial-carousel__arrow--prev");
+  var next  = root.querySelector(".testimonial-carousel__arrow--next");
   var i = 0;
   function show(n) {
-    i = (n + slides.length) % slides.length;
-    slides.forEach(function (slide, idx) {
+    i = (n + pages.length) % pages.length;
+    pages.forEach(function (page, idx) {
       var on = idx === i;
-      slide.classList.toggle("is-active", on);
-      slide.setAttribute("aria-hidden", on ? "false" : "true");
+      page.classList.toggle("is-active", on);
+      page.setAttribute("aria-hidden", on ? "false" : "true");
     });
   }
   if (prev) prev.addEventListener("click", function () { show(i - 1); });
