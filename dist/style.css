@@ -396,36 +396,13 @@ section.testimonial-spotlight-band.section-margin {
   padding-bottom: 127px; /* 52 + 75 */
 }
 
-/* Testimonial carousel: three cards per slide, prev/next (no auto-scroll) */
-.testimonial-carousel {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
-  width: 100%;
+/* Three guest reviews in a static grid (no carousel) */
+.testimonials-marquee-band__grid-wrap {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px clamp(8px, 2vw, 20px) 20px;
   box-sizing: border-box;
-}
-
-.testimonial-carousel__viewport {
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-  margin-top: 8px;
-}
-
-.testimonial-carousel__pages {
-  position: relative;
-}
-
-.testimonial-carousel__page {
-  display: none;
-}
-
-.testimonial-carousel__page.is-active {
-  display: block;
 }
 
 .testimonial-grid {
@@ -441,54 +418,9 @@ section.testimonial-spotlight-band.section-margin {
   flex-direction: column;
 }
 
-.testimonial-carousel__arrow {
-  flex-shrink: 0;
-  align-self: center;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  color: #ff4d4d;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: background 0.15s ease, transform 0.15s ease;
-}
-
-.testimonial-carousel__arrow:hover,
-.testimonial-carousel__arrow:focus {
-  background: #fff;
-  transform: scale(1.05);
-  outline: none;
-}
-
-.testimonial-carousel__arrow:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
 @media (max-width: 991px) {
   .testimonial-grid {
     grid-template-columns: 1fr;
-  }
-
-  .testimonial-carousel {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .testimonial-carousel__viewport {
-    order: 1;
-    width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .testimonial-carousel__arrow--prev {
-    order: 2;
-  }
-
-  .testimonial-carousel__arrow--next {
-    order: 3;
   }
 }
 @media (max-width: 768px) {
