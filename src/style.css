@@ -681,9 +681,10 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   }
 }
 
-.page-hail .hail-page-nav,
-.page-pdr .pdr-page-nav,
-.page-glass .glass-page-nav,
+/* Service subpages — vehicle recalibration, hail, PDR, auto glass (shared recal-page-* layout) */
+.page-hail .recal-page-nav,
+.page-pdr .recal-page-nav,
+.page-glass .recal-page-nav,
 .page-recal .recal-page-nav {
   background-color: #111;
   color: #fff;
@@ -691,28 +692,28 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   font-size: 16px;
 }
 
-.page-hail .hail-page-nav a,
-.page-pdr .pdr-page-nav a,
-.page-glass .glass-page-nav a,
+.page-hail .recal-page-nav a,
+.page-pdr .recal-page-nav a,
+.page-glass .recal-page-nav a,
 .page-recal .recal-page-nav a {
   color: #fff;
   text-decoration: none;
 }
 
-.page-hail .hail-page-nav a:hover,
-.page-hail .hail-page-nav a:focus,
-.page-pdr .pdr-page-nav a:hover,
-.page-pdr .pdr-page-nav a:focus,
-.page-glass .glass-page-nav a:hover,
-.page-glass .glass-page-nav a:focus,
+.page-hail .recal-page-nav a:hover,
+.page-hail .recal-page-nav a:focus,
+.page-pdr .recal-page-nav a:hover,
+.page-pdr .recal-page-nav a:focus,
+.page-glass .recal-page-nav a:hover,
+.page-glass .recal-page-nav a:focus,
 .page-recal .recal-page-nav a:hover,
 .page-recal .recal-page-nav a:focus {
   color: #ff4d4d;
 }
 
-.page-hail .hail-page-hero,
-.page-pdr .pdr-page-hero,
-.page-glass .glass-page-hero,
+.page-hail .recal-page-hero,
+.page-pdr .recal-page-hero,
+.page-glass .recal-page-hero,
 .page-recal .recal-page-hero {
   background-color: #ff4d4d;
   color: #fff;
@@ -720,29 +721,25 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   text-align: center;
 }
 
-.page-hail .hail-page-hero h1,
-.page-pdr .pdr-page-hero h1,
-.page-glass .glass-page-hero h1,
+.page-hail .recal-page-hero h1,
+.page-pdr .recal-page-hero h1,
+.page-glass .recal-page-hero h1,
 .page-recal .recal-page-hero h1 {
   margin-top: 0;
   font-weight: bold;
 }
 
-.page-hail .hail-page-main,
-.page-pdr .pdr-page-main,
-.page-glass .glass-page-main {
-  padding: 44px 0 60px;
-  background-color: #ebebeb;
-}
-
+.page-hail .recal-page-main,
+.page-pdr .recal-page-main,
+.page-glass .recal-page-main,
 .page-recal .recal-page-main {
   padding: 22px 0 60px;
   background-color: #ebebeb;
 }
 
-.page-hail .hail-page-main h2,
-.page-pdr .pdr-page-main h2,
-.page-glass .glass-page-main h2,
+.page-hail .recal-page-main h2,
+.page-pdr .recal-page-main h2,
+.page-glass .recal-page-main h2,
 .page-recal .recal-page-main h2 {
   margin-top: 36px;
   margin-bottom: 16px;
@@ -750,59 +747,60 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   font-size: 1.65em;
 }
 
-.page-hail .hail-page-main p,
-.page-pdr .pdr-page-main p,
-.page-glass .glass-page-main p,
+.page-hail .recal-page-main p,
+.page-pdr .recal-page-main p,
+.page-glass .recal-page-main p,
 .page-recal .recal-page-main p {
   margin-bottom: 14px;
   line-height: 1.65;
   color: #333;
 }
 
-.page-hail .hail-page-main a,
-.page-pdr .pdr-page-main a,
-.page-glass .glass-page-main a,
+.page-hail .recal-page-main a,
+.page-pdr .recal-page-main a,
+.page-glass .recal-page-main a,
 .page-recal .recal-page-main a {
   color: #c9302c;
   text-decoration: underline;
 }
 
-.page-hail .hail-page-lead-media,
-.page-pdr .pdr-page-lead-media,
-.page-glass .glass-page-lead-media,
+.page-hail .recal-page-lead-media,
+.page-pdr .recal-page-lead-media,
+.page-glass .recal-page-lead-media,
 .page-recal .recal-page-lead-media {
   margin-bottom: 28px;
 }
 
-.page-hail .hail-page-lead-media img,
-.page-pdr .pdr-page-lead-media img,
-.page-glass .glass-page-lead-media img,
+.page-hail .recal-page-lead-media img,
+.page-pdr .recal-page-lead-media img,
+.page-glass .recal-page-lead-media img,
 .page-recal .recal-page-lead-media img {
   border-radius: 6px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-.page-hail .hail-page-rule,
-.page-pdr .pdr-page-rule,
-.page-glass .glass-page-rule,
+.page-hail .recal-page-rule,
+.page-pdr .recal-page-rule,
+.page-glass .recal-page-rule,
 .page-recal .recal-page-rule {
   border-color: #ccc;
   margin: 36px 0;
 }
 
-.page-hail .hail-page-inline-img,
-.page-pdr .pdr-page-inline-img,
-.page-glass .glass-page-inline-img,
+.page-hail .recal-page-inline-img,
+.page-pdr .recal-page-inline-img,
+.page-glass .recal-page-inline-img,
 .page-recal .recal-page-inline-img {
   margin-bottom: 20px;
 }
 
-.page-hail .hail-page-inline-img .col-sm-6 {
+.page-hail .recal-page-inline-img .col-sm-6 {
   margin-bottom: 16px;
 }
 
-.page-pdr .pdr-page-list,
-.page-glass .glass-page-list,
+.page-hail .recal-page-list,
+.page-pdr .recal-page-list,
+.page-glass .recal-page-list,
 .page-recal .recal-page-list {
   margin-bottom: 16px;
   padding-left: 1.25em;
@@ -810,25 +808,31 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   color: #333;
 }
 
-.page-pdr .pdr-page-list li,
-.page-glass .glass-page-list li,
+.page-hail .recal-page-list li,
+.page-pdr .recal-page-list li,
+.page-glass .recal-page-list li,
 .page-recal .recal-page-list li {
   margin-bottom: 8px;
 }
 
-.page-hail .hail-page-cta,
-.page-pdr .pdr-page-cta,
-.page-glass .glass-page-cta,
+.page-hail .recal-page-cta,
+.page-pdr .recal-page-cta,
+.page-glass .recal-page-cta,
 .page-recal .recal-page-cta {
   margin-top: 36px;
   margin-bottom: 0;
 }
 
-/* Recalibration — reserved image areas (replace frame with img when assets are ready) */
+.page-hail .recal-page-media-slot,
+.page-pdr .recal-page-media-slot,
+.page-glass .recal-page-media-slot,
 .page-recal .recal-page-media-slot {
   margin: 0 0 32px;
 }
 
+.page-hail .recal-page-media-slot--spaced,
+.page-pdr .recal-page-media-slot--spaced,
+.page-glass .recal-page-media-slot--spaced,
 .page-recal .recal-page-media-slot--spaced {
   margin: 36px 0 32px;
 }
@@ -846,6 +850,51 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   }
 }
 
+/* PDR page: home-spotlight + process photos slightly inset, centered */
+.page-pdr .pdr-page-body-image__fig {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-pdr .pdr-page-body-image__fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Auto glass page: same treatment for home spotlight image */
+.page-glass .glass-page-lead-image__fig {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-glass .glass-page-lead-image__fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PDR + auto glass: more space below red hero before first line of copy */
+.page-pdr .recal-page-main,
+.page-glass .recal-page-main {
+  padding-top: 40px;
+}
+
+/* PDR + auto glass: extra air between intro paragraph and lead image (padding avoids margin collapse) */
+.page-pdr .recal-page-main .col-md-10 > p:first-of-type,
+.page-glass .recal-page-main .col-md-10 > p:first-of-type {
+  margin-bottom: 24px;
+}
+
+.page-pdr .recal-page-main .col-md-10 > p:first-of-type + .recal-page-media-slot,
+.page-glass .recal-page-main .col-md-10 > p:first-of-type + .recal-page-media-slot {
+  padding-top: 8px;
+}
+
+/* First h2 flush to top content only when it opens the column (recal, hail after lead image) */
+.page-hail .recal-page-main h2:first-of-type,
 .page-recal .recal-page-main h2:first-of-type {
   margin-top: 0;
 }
@@ -1204,14 +1253,18 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
 }
 
 @media (max-width: 768px) {
+  .why-rydell {
+    min-height: 0;
+  }
+
   .why-rydell::before {
-    background-position: 30% center;
+    display: none;
   }
 
   .why-rydell::after {
     left: 0;
     width: 100%;
-    background: rgba(36, 52, 58, 0.88);
+    background: #24343a;
   }
 
   .why-rydell__copy {
@@ -1400,12 +1453,15 @@ section.contact-cta.section-margin {
   position: absolute;
   z-index: 0;
   top: 0;
-  right: 0;
+  /* Constrain the photo to the LEFT 50% so its right edge aligns with the red column seam.
+     cover = fill vertically; when horizontal overflow is needed, 66% center
+     nudges the crop balance slightly. */
+  right: 50%;
   bottom: 0;
   left: 0;
   background-image: url("guest-keys.jpg");
-  background-size: contain;
-  background-position: left center;
+  background-size: cover;
+  background-position: 66% center;
   background-repeat: no-repeat;
 }
 
@@ -1538,15 +1594,27 @@ section.contact-cta.section-margin {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 768px) {
+/* Tablet: same crop anchor as desktop (66%) */
+@media (min-width: 769px) and (max-width: 991px) {
   .contact-cta::before {
-    background-position: 30% center;
+    background-size: cover;
+    background-position: 66% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cta {
+    min-height: 0;
+  }
+
+  .contact-cta::before {
+    display: none;
   }
 
   .contact-cta::after {
     left: 0;
     width: 100%;
-    background: rgba(255, 77, 77, 0.88);
+    background: #ff4d4d;
   }
 
   .contact-cta__copy {
