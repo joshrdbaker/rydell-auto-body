@@ -59,7 +59,7 @@ body {
       rgba(0, 0, 0, 0.12) 52%,
       rgba(0, 0, 0, 0) 64%
     ),
-    url("https://raw.githubusercontent.com/joshrdbaker/testing/refs/heads/main/CH1A0929.JPG");
+    url("./images/CH1A0929.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 35%;
@@ -1104,7 +1104,7 @@ section.spotlight-services ul.nav.nav-tabs.spotlight-services__tabs > li.active 
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("https://raw.githubusercontent.com/joshrdbaker/testing/refs/heads/main/wielding.png");
+  background-image: url("./images/wielding.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
@@ -2040,4 +2040,216 @@ section.contact-cta.section-margin {
     min-height: 480px;
     max-height: 480px;
   }
+}
+
+/* -------------------------
+   REVIEWS FUNNEL (reviews.html)
+   Same tier picker concept as rydell-reviews-redirect; Bootstrap 3 + vanilla JS only.
+------------------------- */
+.page-reviews {
+  background-color: #fff;
+  color: #222;
+  padding-bottom: 48px;
+}
+
+.page-reviews .reviews-funnel-wrap {
+  max-width: 720px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.page-reviews .reviews-navhome__link {
+  color: #db2d2e;
+  font-weight: 600;
+}
+
+.page-reviews .reviews-header {
+  margin-bottom: 28px;
+}
+
+.page-reviews .reviews-hero-h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 16px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #111;
+  text-align: center;
+}
+
+.page-reviews .hero-heading-line1 {
+  display: block;
+  margin-bottom: 0;
+  line-height: 1.05;
+}
+
+.page-reviews .hero-heading-line2 {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.02em;
+  margin-top: -0.28em;
+  line-height: 1;
+}
+
+.page-reviews .hero-heading-eally {
+  margin-left: -0.02em;
+}
+
+@media (min-width: 992px) {
+  .page-reviews .reviews-hero-h1 {
+    font-size: 36px;
+  }
+}
+
+.page-reviews .reviews-hero-r-inline {
+  flex-shrink: 0;
+  height: 0.95em;
+  width: auto;
+  max-height: 1.05em;
+  display: block;
+  position: relative;
+  left: -8px;
+  transform: translateY(0.28em);
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.page-reviews .reviews-sublead {
+  margin: 0 auto;
+  max-width: 36rem;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #555;
+}
+
+.page-reviews .reviews-app-root {
+  flex: 1;
+}
+
+.page-reviews .reviews-tier-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #333;
+}
+
+.page-reviews .reviews-picker-grid {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.page-reviews .reviews-picker-grid > [class*="col-"] {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 12px;
+}
+
+.page-reviews .reviews-picker-btn {
+  min-height: 56px;
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.page-reviews .reviews-picker-btn:hover,
+.page-reviews .reviews-picker-btn:focus {
+  border-color: rgba(219, 45, 46, 0.55);
+  background-color: rgba(219, 45, 46, 0.06);
+  outline: none;
+}
+
+.page-reviews .reviews-picker-btn:focus-visible {
+  outline: 3px solid #db2d2e;
+  outline-offset: 3px;
+}
+
+.page-reviews .reviews-picker-module--tier1 {
+  background-color: #db2d2e;
+  border-radius: 16px;
+  padding: 22px 18px 26px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+@media (min-width: 768px) {
+  .page-reviews .reviews-picker-module--tier1 {
+    padding: 28px 26px 32px;
+  }
+}
+
+.page-reviews .reviews-tier-heading--on-red {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-reviews .reviews-picker-module--tier1 .reviews-picker-btn:hover,
+.page-reviews .reviews-picker-module--tier1 .reviews-picker-btn:focus {
+  border-color: rgba(255, 255, 255, 0.55);
+  background-color: #fafafa;
+}
+
+.page-reviews .reviews-picker-module--tier1 .reviews-picker-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.page-reviews .reviews-back-btn {
+  padding-left: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #db2d2e;
+}
+
+.page-reviews .reviews-thanks-panel {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.page-reviews .reviews-thanks-msg {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  color: #111;
+}
+
+.page-reviews .reviews-btn-primary {
+  background-color: #db2d2e;
+  border-color: #c92829;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.page-reviews .reviews-btn-primary:hover,
+.page-reviews .reviews-btn-primary:focus {
+  background-color: #c92829;
+  border-color: #b32425;
+  color: #fff;
+}
+
+.page-reviews .reviews-footer-link {
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+.page-reviews .reviews-footer-link a {
+  color: #db2d2e;
+  font-weight: 600;
+}
+
+.page-reviews .reviews-footer-link a:hover,
+.page-reviews .reviews-footer-link a:focus {
+  color: #a02622;
 }

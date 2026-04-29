@@ -11,8 +11,13 @@ for f in src/*.html; do
   cp "$f" "dist/$(basename "$f")"
 done
 
+for f in src/*.js; do
+  [ -f "$f" ] || continue
+  cp "$f" "dist/$(basename "$f")"
+done
+
 if [ -d src/images ] && [ -d dist/images ]; then
   cp -f src/images/* dist/images/ 2>/dev/null || true
 fi
 
-echo "sync-dist: copied style.css, HTML from src/ to dist/ (and images if present)."
+echo "sync-dist: copied style.css, HTML, JS from src/ to dist/ (and images if present)."

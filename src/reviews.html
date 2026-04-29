@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leave a Google review for Rydell — pick your location.">
+  <title>Rydell — Reviews</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="page-reviews">
+  <div class="container reviews-funnel-wrap">
+    <div class="reviews-navhome visible-xs text-right">
+      <a href="index.html" class="reviews-navhome__link">Home</a>
+    </div>
+
+    <header class="reviews-header text-center">
+      <h1 class="reviews-hero-h1" aria-label="Tell us what you Really think.">
+        <span class="hero-heading-line1">Tell us what you</span>
+        <span class="hero-heading-line2">
+          <img
+            id="reviews-rydell-r"
+            class="reviews-hero-r-inline"
+            src="images/rydell-r.png"
+            alt="Rydell"
+            width="42"
+            height="33"
+            decoding="async"
+          />
+          <span class="hero-heading-eally">eally think.</span>
+        </span>
+      </h1>
+      <p class="reviews-sublead">
+        Whether you had a great experience or there&apos;s something we can improve on — we&apos;d love to hear from you.
+      </p>
+    </header>
+
+    <div id="reviews-app" class="reviews-app-root" aria-live="polite"></div>
+
+    <p class="reviews-footer-link text-center">
+      <a href="index.html">&larr; Back to Rydell Auto Body &amp; Glass</a>
+    </p>
+  </div>
+
+  <script id="reviews-locations-json" type="application/json">
+{"locations":[{"id":"rydell-chevrolet-gmc","name":"Rydell Chevrolet GMC","pickerLabel":"Rydell Chevrolet GMC","address":"2700 S Washington St, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Chevrolet+GMC+2700+S+Washington+St+Grand+Forks+ND+58201","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Chevrolet+GMC+2700+S+Washington+St+Grand+Forks+ND+58201","todo":"resolve place_id"},{"id":"rydell-cadillac","name":"Rydell Cadillac","pickerLabel":"Rydell Cadillac","address":"2700 S Washington St, Grand Forks, ND","category":"sales","placeId":"ChIJq6qq-c2AxlIRdxmoxw-3P0Q","mapsUrl":"https://www.google.com/maps?q=place_id:ChIJq6qq-c2AxlIRdxmoxw-3P0Q&place_id=ChIJq6qq-c2AxlIRdxmoxw-3P0Q","reviewUrl":"https://search.google.com/local/writereview?placeid=ChIJq6qq-c2AxlIRdxmoxw-3P0Q"},{"id":"rydell-toyota-gf","name":"Rydell Toyota of Grand Forks","pickerLabel":"Rydell Toyota of Grand Forks","address":"2473 32nd Ave S, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Toyota+of+Grand+Forks+2473+32nd+Ave+S+Grand+Forks+ND+58201","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Toyota+of+Grand+Forks+2473+32nd+Ave+S+Grand+Forks+ND+58201","todo":"resolve place_id"},{"id":"rydell-toyota-service","name":"Rydell Toyota Service Center","pickerLabel":"Rydell Toyota Service Center","address":"2473 32nd Ave S, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Toyota+of+Grand+Forks+Service+Center+2473+32nd+Ave+S+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Toyota+of+Grand+Forks+Service+Center+2473+32nd+Ave+S+Grand+Forks+ND","todo":"resolve place_id"},{"id":"rydell-honda-gf","name":"Rydell Honda of Grand Forks","pickerLabel":"Rydell Honda of Grand Forks","address":"3220 S Washington St, Bldg A, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Honda+of+Grand+Forks+3220+S+Washington+St+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Honda+of+Grand+Forks+3220+S+Washington+St+Grand+Forks+ND","todo":"resolve place_id"},{"id":"rydell-nissan-gf","name":"Rydell Nissan of Grand Forks","pickerLabel":"Rydell Nissan of Grand Forks","address":"3220 S Washington St, Bldg B, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Nissan+of+Grand+Forks+3220+S+Washington+St+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Nissan+of+Grand+Forks+3220+S+Washington+St+Grand+Forks+ND","todo":"resolve place_id"},{"id":"rydell-auto-outlet","name":"Rydell Auto Outlet","pickerLabel":"Rydell Auto Outlet","address":"5500 Gateway Dr, Grand Forks, ND","category":"sales","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Auto+Outlet+5500+Gateway+Dr+Grand+Forks+ND+58203","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Auto+Outlet+5500+Gateway+Dr+Grand+Forks+ND+58203","todo":"resolve place_id"},{"id":"rydell-body-glass","name":"Rydell Body Shop & Auto Glass","pickerLabel":"Rydell Body Shop & Auto Glass","address":"1502 28th Ave S, Grand Forks, ND","category":"body","placeId":null,"mapsUrl":"https://www.google.com/maps/place/Rydell+Body+Shop+and+Auto+Glass/@47.8936692,-97.048896,17z/data=!3m1!4b1!4m5!3m4!1s0x52c680ce09a02809:0xcc3e53106626d7c8!8m2!3d47.8936692!4d-97.048896","reviewUrl":"https://www.google.com/maps?cid=14717291962191763400","todo":"resolve place_id (hex pair 0x52c680ce09a02809:0xcc3e53106626d7c8; cid decimal fallback)"},{"id":"rydell-car-wash-s-wash","name":"Rydell Car Wash and Detail Center","pickerLabel":"Rydell Car Wash & Detail Center (S Washington)","address":"2600 S Washington St, Grand Forks, ND","category":"wash","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Car+Wash+and+Detail+Center+2600+S+Washington+St+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Car+Wash+and+Detail+Center+2600+S+Washington+St+Grand+Forks+ND","todo":"resolve place_id"},{"id":"rydell-car-wash-gateway","name":"Rydell Car Wash (Gateway Dr)","pickerLabel":"Rydell Car Wash (Gateway Dr)","address":"1905 Gateway Dr, Grand Forks, ND","category":"wash","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Car+Wash+1905+Gateway+Dr+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Car+Wash+1905+Gateway+Dr+Grand+Forks+ND","todo":"resolve place_id"},{"id":"rydell-detail-center","name":"Rydell Detail Center","pickerLabel":"Rydell Detail Center","address":"2600 S Washington St, Grand Forks, ND","category":"wash","placeId":null,"mapsUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Detail+Center+Grand+Forks+ND","reviewUrl":"https://www.google.com/maps/search/?api=1&query=Rydell+Detail+Center+Grand+Forks+ND","todo":"resolve place_id"}]}
+
+  </script>
+  <script src="reviews-app.js"></script>
+</body>
+</html>
